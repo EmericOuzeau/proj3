@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="71.208" height="71.208" viewBox="0 0 71.208 71.208">
                 <g id="neural" transform="translate(-3 -3)">
                   <g id="Groupe_3987" data-name="Groupe 3987" transform="translate(13.676 12.239)">
@@ -35,21 +35,24 @@
             E Learning
         </div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
+            <ul id="menuhead">
+                <li><a class="btnheader" href="#">Home</a></li>
+                <li><a class="btnheader" href="#">About Us</a></li>
+                <li><a class="btnheader" href="#">Services</a></li>
                 <li><a class="btnstyle1" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+
     <main>
 
         <!--grille 1-->
         <section id="grid1">
 
             <!--bloque 1 grille 1-->
-            <div>
+            <div id="title">
+                <img src="./assets/img/smileychrist.svg" alt="smiley">
                 <h1>Watch daily <span class="light">Live Classes</span></h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
             </div> <!-- /bloque 1 grille 1-->
@@ -62,9 +65,9 @@
                     <div class="icon">
                         <img src="./assets/img/renne.svg" alt="image de renne">
                     </div>
-                    <div>
-                        <h3>Ui/Ux<h3>
-                        <p>spanLorem ipsum dummy text are usually</p>
+                    <div id="text">
+                        <h3>Ui/Ux</h3>
+                        <p>Lorem ipsum dummy text are usually</p>
                     </div>
                     
                 </div> <!-- /bloque flottant 1-->
@@ -74,13 +77,12 @@
                     <div class="icon">
                         <img src="./assets/img/medail.svg" alt="medaille">
                     </div>
-                    <p>Best E Learning Awardr</p>
+                    <p class="">Best E Learning Awardr</p>
                 </div> <!-- /bloque flottant 2-->
-
             </div> <!-- /bloque 2 grille 1-->
 
             <!--bloque 3 grille 1-->
-            <div>
+            <div id="bouton">
                 <a class="btnstyle1" href="#">Join now</a>
             </div>  <!-- /bloque 3 grille 1-->
 
@@ -90,64 +92,88 @@
         <section id="grid2">
 
             <!--bloque 1 grille 2-->
-            <div>
+            <div id="content-text-g2">
                 <h2>Our Awesome <span class="light">Classes</span></h2>
                 <p>Lorem ipsum dummy text are usually use print and website industry. So I used their also</p>
             </div> <!-- /bloque 1 grille 2-->
 
             <!--bloque 2 grille 2-->
-            <div class="classes">
-                <img src="./assets/img/smileychrist.svg" alt="smiley">
-                <h3>Design</h3>
-                <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
-                <a class="btnstyle2" href="#">Learn more</a>
-            </div> <!-- /bloque 2 grille 2-->
+            <div class="content-classes content-classes-2">
+                <div class="classes classes1">
+                    <img src="./assets/img/smileychrist.svg" alt="smiley">
+                    <div class="text-into">
+                        <h3>Design</h3>
+                        <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                    </div>
+                    <a class="btnstyle2" href="#">Learn more</a>
+                </div> <!-- /bloque 2 grille 2-->
+            </div>
+            
 
             <!--bloque 3 grille 2-->
-            <div class="classes">
-                <img src="./assets/img/emoji.svg" alt="emoji">
-                <h3>Developments</h3>
-                <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
-                <a class="btnstyle2" href="#">Learn more</a>
-            </div> <!-- /bloque 3 grille 2-->
+            <div class="content-classes">
+                <div class="classes classes2">
+                    <img src="./assets/img/emoji.svg" alt="emoji">
+                    <div class="text-into">
+                        <h3>Developments</h3>
+                        <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                    </div>
+                    <a class="btnstyle2" href="#">Learn more</a>
+                </div> <!-- /bloque 3 grille 2-->
+            </div>
+            
 
             <!--bloque 4 grille 2-->
-            <div class="classes">
-                <img src="./assets/img/renne.svg" alt="renne">
-                <h3>Ui/Ux</h3>
-                <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
-                <a class="btnstyle2" href="#">Learn more</a>
-            </div> <!-- /bloque 4 grille 2-->
+            <div class="content-classes">
+                <div class="classes classes3">
+                    <img src="./assets/img/renne.svg" alt="renne">
+                    <div class="text-into">
+                        <h3>Ui/Ux</h3>
+                        <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                    </div>
+                    <a class="btnstyle2" href="#">Learn more</a>
+                </div> <!-- /bloque 4 grille 2-->
+            </div>
+            
+            <div id="boutonclasse">
+                <a class="btnstyle1" href="">More Classes</a>
+            </div>
 
         </section> <!-- /grille 2-->
 
-        <section>
+        <section id="section3">
             <h2>Get any question answered</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+            <p id="descguess">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
             
             <!--grille 3-->
-            <div>
+            <div id="grid3">
                 <!--bloque 1 grille 3-->
                 <div class="guess guesscolor1">
                     <img src="./assets/img/emoji.svg" alt="emoji">
-                    <h3>Homework Help</h3>
-                    <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                    <div class="text-into">
+                        <h3>Homework Help</h3>
+                        <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                    </div>
                     <a class="btnstyle2" href="#">Learn more</a>
                 </div> <!-- /bloque 1 grille 3-->
 
                 <!--bloque 2 grille 3-->
-                <div class="guess guesscolor1">
+                <div class="guess guesscolor2">
                     <img src="./assets/img/smileychrist.svg" alt="smiley">
-                    <h3>Homework Help</h3>
-                    <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                    <div class="text-into">
+                        <h3>Homework Help</h3>
+                        <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                    </div>
                     <a class="btnstyle2" href="#">Learn more</a>
                 </div> <!-- /bloque 2 grille 3-->
 
                 <!--bloque 3 grille 3-->
-                <div class="guess guesscolor1">
+                <div class="guess guesscolor3">
                     <img src="./assets/img/renne.svg" alt="renne">
-                    <h3>Homework Help</h3>
-                    <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                    <div class="text-into">
+                        <h3>Homework Help</h3>
+                        <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this design</p>
+                    </div>
                     <a class="btnstyle2" href="#">Learn more</a>
                 </div> <!-- /bloque 3 grille 3-->
 
@@ -209,7 +235,7 @@
 <footer>
     <!--footer fragment 1-->
     <section id="footfrag1">
-        <div>
+        <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="71.208" height="71.208" viewBox="0 0 71.208 71.208">
                 <g id="neural" transform="translate(-3 -3)">
                   <g id="Groupe_3987" data-name="Groupe 3987" transform="translate(13.676 12.239)">
