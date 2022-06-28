@@ -29,6 +29,20 @@ section{
     gap: 5em;
 }
 
+/*style bouton burger*/
+#btnburger{
+    width: 2em;
+    height: 2em;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bar{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+}
+
 .btnheader{
     text-decoration: none;
     color: black;
@@ -103,13 +117,14 @@ h1{
 
 
 #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background: url(../img/visuboycomp.svg) no-repeat center / cover;
     height: 45em;
     width: 45em;
     margin: auto;
-    grid-row: 1 / span 2;
-    grid-column: 2;
 }
 
 
@@ -163,7 +178,6 @@ h1{
 #text{
     display: flex;
     flex-direction: column;
-    justify-content: 
 }
 
 #text p{
@@ -172,6 +186,10 @@ margin-top: 0.2em;
 
 #text h3{
     margin-bottom: 0.2em;
+}
+
+#textmedail{
+    font-size: 1.2em;
 }
 
 #bouton{
@@ -222,27 +240,6 @@ h2{
     height: 24em;
 }
 
-.content-classes-2{
-    grid-row: 1 / span 2;
-    grid-column: 2;
-}
-
-.classes1{
-    position: absolute;
-    left: 6em;
-}
-
-.classes2{
-    position: absolute;
-    right: 0em;
-    top: -3em;
-}
-
-.classes3{
-    position: absolute;
-    left: 3em;
-}
-
 .text-into{
     display: flex;
     flex-direction: column;
@@ -255,11 +252,6 @@ h2{
     margin: 0;
     text-align: center;
     width: 80%;
-}
-
-#boutonclasse{
-    margin-top: 0;
-    grid-row: 2;
 }
 
 #section3{
@@ -311,4 +303,222 @@ h2{
 
 .guesscolor3{
     background: linear-gradient(#84F5D0, #00CB89);
+}
+
+.basicgrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    align-items: flex-start;
+}
+
+.align-basicgrid{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.bigimg{
+    width: 100%;
+}
+
+.liste{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: 90%;
+    height: 5em;
+    background-color: white;
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.2));
+    border-radius: 1em;
+}
+
+.liste-icon{
+    background-color: white;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.1));
+    border-radius: 0.6em;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    margin-right: 0em;
+}
+
+.liste-icon img{
+    width: 2em;
+}
+
+.liste-text p, .liste-text h4{
+    margin: 0.6em;
+    margin-left: 0em;
+}
+
+#footfrag1{
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#gridfoot{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    gap: 7em;
+}
+
+#gridfoot ul{
+    padding: 0;
+    margin-left: 0px;
+}
+
+#gridfoot li{
+    margin: 1em;
+}
+
+h5{
+    font-weight: lighter;
+    font-size: 1.4em;
+}
+
+footer section{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+#footfrag2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.btnrs{
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 1.4em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnrs:hover{
+    background-color: #00c4a6;
+}
+
+.btnrs:hover path{
+    fill: white;
+}
+
+/*------------------règle spécifique au desktop*/
+@media only screen and (min-width: 992px){
+    #btnburger{
+        display: none;
+    }
+
+    header nav{
+        display: flex;
+    }
+
+    #container{
+        grid-row: 1 / span 2;
+        grid-column: 2;
+    }
+
+    
+    .content-classes-2{
+        grid-row: 1 / span 2;
+        grid-column: 2;
+    }
+
+    
+    .classes1{
+        position: absolute;
+        left: 6em;
+    }
+
+    .classes2{
+        position: absolute;
+        right: 0em;
+        top: -3em;
+    }
+
+    .classes3{
+        position: absolute;
+        left: 3em;
+    }
+
+
+    #boutonclasse{
+        margin-top: 0;
+        grid-row: 2;
+    }
+
+}
+
+/*------------------règle spécifique au mobile*/
+@media only screen and (max-width: 992px){
+    #btnburger{
+        display: flex;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .btnstyle1{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    #grid1, #grid2, #grid3, .basicgrid{
+        grid-template-columns: 1fr;
+    }
+
+    #container{
+        font-size: 14px;
+    }
+
+    
+    .classes1, .classes2, .classes3{
+    display: flex;
+    justify-content: center;
+    }
+
+    .content-classes{
+        display: flex;
+        justify-content: center;
+    }
+
+    #content-text-g2{
+        margin-bottom: 2em;
+    }
+
+    #grid3{
+        gap: 2em;
+    }
+
+    #footfrag1{
+        gap: 0;
+        padding: 0em;
+        font-size: 12px;
+    }
+    
+    #gridfoot{
+        gap: 0em;
+    }
+
+    #footfrag2{
+        padding: 0.4em;
+    }
 }
