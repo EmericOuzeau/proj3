@@ -259,6 +259,10 @@ h2{
     align-items: center;
 }
 
+#section3 h2{
+    text-align: center;
+}
+
 #descguess{
     text-align: center;
     width: 60%;
@@ -502,7 +506,7 @@ footer section{
     overflow-x: hidden
     }
 
-    .bloque{;
+    .bloque{
         padding: 0em 0.5em 0em 0.5em;
         border-radius: 1em;
         gap: 1em;
@@ -538,7 +542,7 @@ footer section{
     }
     
     #gridfoot{
-        gap: 0em;
+        gap: 1em;
     }
 
     #footfrag2{
